@@ -1,0 +1,28 @@
+## Git 使用记录 ##
+
+**新建项目**
+
++ *修改gitosis.conf , 添加一下内容：*
+> [group Atmega8]  *`Atmega8` 是项目组的名字*
+> members = pydog@pydog *pydog@pydog 对应的是 username@servername ，指定了对项目有相应权限的成员*
+> writable = Atmega8
+
++ *新建项目文件夹，初始化并推送到git服务器：*
+> `mkdir Atmega8`
+> `cd Atmega8`
+> `git init`
+> 添加.gitignore文件忽略不想管理的文件
+> 编辑当前项目的.git/description文件，添加对项目的描述
+> 提交代码到git服务器：·git remote add origin git@Server:Atmega8.git·
+
++ *添加新成员到项目*
+> 修改gitosis.conf为以下形势：
+> [group Atmega8]  
+> members = pydog@pydog Mem@MemServer
+> writable = Atmega8
+> `git add gitosis.conf`
+> `git commit -a -m "Add New Member"`
+> `git push origin master`
+
++ *其它成员获取项目源码*
+> `git clone git@GitServer:Atmega8.git`
