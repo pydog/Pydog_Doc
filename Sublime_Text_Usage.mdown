@@ -1,4 +1,4 @@
-## Sublime Text 使用记录 ##
+## Sublime Text 2使用记录 ##
 
 **安装Package control**
 ---
@@ -20,3 +20,7 @@
   >> `"ignored_packages":
     [
     ]`
+    
+## Sublime Text 2使用记录 ##
+
+
