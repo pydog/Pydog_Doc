@@ -25,14 +25,18 @@
 > `git push origin master`
 
 + *其它成员获取项目源码*
-> `git clone git@GitServer:Atmega8.git`
+> 
+
+        git clone git@GitServer:Atmega8.git
 
 ##Github 使用记录##
 
 + 解决每次都需要输入用户名密码:
-  > 修改.git/config文件，修改里面的URL为：
-        `url = https://github.com/pydog/Pydog_Doc.git`
+    > 修改.git/config文件，修改里面的URL为：
+
+        url = https://github.com/pydog/Pydog_Doc.git
 
 + 解决每次都需要输入ssh key 密码：
     > 参考github下面的帮助文档：
-         `https://help.github.com/articles/working-with-ssh-key-passphrases`
+
+         https://help.github.com/articles/working-with-ssh-key-passphrases
